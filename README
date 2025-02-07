@@ -1,0 +1,55 @@
+- Demo
+  
+  
+- Getting Started
+  
+	- Download this git repo: https://github.com/nico-gao/react-evalution-starter-code
+	- Run "npm install" to install dependencies
+	- Run "npm start" to start both the json server and the live server (you don't need to use the live server extension)
+	- Check out http://localhost:3000/ to start play around with the server
+	- The server stores data in the ./db/db.json file.
+	- You can perform CRUD operations to the database through http request(get, post, put, patch, delete).
+- Requirements
+  
+	- Two Lists (MVC)
+		- Use the MVC pattern.
+		- Inventory list (left side): Displays items fetched from the server.
+		- Cart list (right side): Displays cart items, also fetched from the server.
+	- Inventory Interactions
+		- Each inventory item has - and + buttons to adjust the amount you’d like to add.
+		- Clicking “Add to Cart” will:
+			- Add a new cart item if it doesn’t exist in the cart, with the specified amount.
+			- Do nothing if the amount is 0.
+	- Cart Interactions
+		- Each cart item shows its name and current amount.
+		- Clicking “Delete” removes the item from the cart completely.
+		- Edit Feature:
+			- Each cart item has an “Edit” button.
+			- When editing, show - and + buttons to change the item amount.
+			- A “Save” button updates the new amount in both the client and the server.
+	- Checkout
+		- Clicking the “Checkout” button removes all items from the cart (both on the client and the server).
+	- Persisting Data
+		- On first page load, fetch the initial cart and inventory from the JSON server.
+		- Any cart changes (add, update, delete) must be synchronized with the server.
+		- The cart should remain consistent after a page refresh.
+- Layout & Style
+	- Keep the layout symmetrical or two-column, one for inventory and one for the cart.
+	- Aim to mimic the example style in the demo video, but functional correctness is the top priority.
+	- Sample data structure for JSON database for reference (Feel free to adjust or extend as needed)
+		{"inventory":
+			[{"id":1,"content":"Item A"},
+			{"id":2,"content":"Item B"}],
+		"cart":
+			[{"id":2,"content":"Item B","amount":3}]
+		}
+			- Think about how to update existing cart items
+	- You can decide all specific style details or additional small features as long as it’s reasonable and consistent with the overall requirements.
+	- Implement your solution without using AI-generated code or directly copying someone else’s code. All work should be your own.
+- Submission
+  
+	- Create a github repo for your code
+	- Fill out this Google Form to provide your repo link and take a brief questionnaire. (Make sure all your code is committed by 5:30pm ET and submit the form by 6:00pm ET)
+	  https://docs.google.com/forms/d/e/1FAIpQLSdRMt1MIA5sExQWNv0UNeBp4kmXUW-_Hwe_HIBpadoGwEQZsQ/viewform?usp=dialog
+	- Late submissions and commits will not be considered.
+
