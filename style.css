@@ -98,10 +98,11 @@ button {
     padding: 12px;
     background-color: #000;
     color: white;
-    margin-top: 30px;
+    margin-top: 200px;
     border-radius: 4px;
     font-size: 16px;
     cursor: pointer;
+    justify-content: flex-end;
 }
 .dialog {
     position: fixed;
